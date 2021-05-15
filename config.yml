@@ -1,0 +1,16 @@
+environment: dev
+serviceName: Goframework
+port: 8080
+
+newrelic:
+  enabled: true
+  licenseKey: license key
+
+oauth2:
+  provider: google
+  google:
+    clientID: client id
+    clientSecret: client secret
+    redirectURI: http://localhost:8080/login
+    responseType: code
+    scope: openid email
